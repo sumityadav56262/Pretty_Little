@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('quantity',6);
             $table->string('rating',6);
             $table->string('sold_count',6);
-            $table->string('discription',50);
+            $table->string('discription');
             $table->timestamps();
         });
     }

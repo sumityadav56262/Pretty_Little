@@ -16,7 +16,7 @@ class SallerController extends Controller
     {
         $request->validate([
             'tittle'=>'string|max:250',
-            'description'=>'string|max:250',
+            'description'=>'string',
             'price'=>'string|max:6',
             'category'=>'string|max:50',
             'brand'=>'string|max:50',
