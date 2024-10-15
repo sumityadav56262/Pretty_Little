@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+
+}
+body{
+    background-color: rgb(48, 48, 48);
+}
+.product-container{
+    margin-top: 50px;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.text{
+    width: 40%;
+    padding: 5%;
+}
+.all-images{
+    width: fit-content;
+    height: 80vh;
+    display: flex;
+    gap: 10px;
+}
+.small-image{
+    display: flex;
+    flex-direction: column;
+}
+.small-image img{
+    width: auto;
+    height: 19vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.small-image img:hover{
+    opacity: 1;
+}
+
+.main-image img{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    background-color: orange;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 200;
+    border-radius: 8px;
+    border: black solid 1px;
+}
+#qty{
+    width: 60px;
+    font-size: 18px;
+    padding: 8px;
+    font-weight: 400;
+    color: white;
+    background-color: transparent;
+}
+#qty:focus{
+    outline: none;
+}
+p{
+    margin-bottom: 20px;
+}
+.brand{
+    background-color: orange;
+    color: black;
+    width: fit-content;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.price{
+    font-size: 26;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.price-box{
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 30px;
+    border: 2px solid rgb(238, 155, 0);
+    font-weight: bold;
+    text-align: center;
+}
+.btn{
+    margin: 10px 0;
+}
+@media screen and(max-width:1200px) {
+    .wrapper{
+        flex-direction: column;
+        height: auto;
+        padding: 5% 0;
+    }
+    .text{
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width:600px){
+
+    .wrapper{
+        flex-direction: column;
+        height: auto;
+        padding: 5% 10px;
+    }
+    .all-images{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        gap: 5px;
+    }
+    .text{
+        width: 100%;
+    }
+    .small-image{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        order: 1;
+    }
+    .price-box{
+        width: 100%;
+    }
+    .main-image{
+        width: 100%;
+        aspect-ratio: 1;
+        overflow: hidden;
+    }
+    .small-image img{
+        width: 30%;
+        height: auto;
+    }
+    h2{
+        font-size: 20px;
+    }
+}

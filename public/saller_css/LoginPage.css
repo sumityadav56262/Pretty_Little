@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+    letter-spacing: 0.05em;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+    padding: 0px 20px;
+    /* color: #c5c5c5;*/
+}
+.wrapper{
+    width: 420px;
+    height: fit-content;
+    color: white;
+    margin: 0;
+    border: 1px solid white;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid orange;
+    padding: 10px;
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.btn{
+    width: 50%;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+.wrapper h2{
+    font-size: 5vh;
+    text-align: center;
+    margin: 0;
+}
+.wrapper form h2{
+    font-size: 2rem;
+}
+.wrapper .input-box{
+    width: 100%;
+    height: min-content;
+    margin: 30px 0;
+    position: relative;
+    align-items: center;
+    
+}
+.input-box input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background: transparent;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0 40px 0 20px;
+    color: #c5c5c5;;
+}
+
+.register-link,.forget-link{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.forget-link{
+    border-bottom: 2px solid orange;
+    padding-bottom: 10px;
+}
+.register-link a:hover,.forget-link a:hover{
+    color: aliceblue;
+}
+.register-link a,.forget-link a{
+    color: darkorange;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.feedback{
+    color: red;
+}
+@media (max-width: 576px){
+    .wrapper{
+        width: 100%;
+    }
+    .logo a h2{
+        font-size: 2rem;
+    }
+    .wrapper form h2{
+        font-size: 1.5rem;
+    }
+}
