@@ -12,7 +12,7 @@
                         <img src="{{ asset('products_images/' . $products[$i]->pic1) }}" alt="Product-Images" class="product-image">
                         <h5 class="product-name">{{ $products[$i]->name }}</h5>
                         <p class="product-price">Rs. {{ $price }}</p>
-                        <strike class="product-price">M.R.P.{{ $price }}</strike>
+                        <strike class="product-price">M.R.P.{{ $products[$i]->price }}</strike>
                         <button class="buy">Buy Now</button>
                     </a>
                     <span class="ribbon">NEW</span>
