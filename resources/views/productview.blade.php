@@ -34,7 +34,7 @@
                         <h2 class='model'>{{$product->name}}</h2>
                         <div class='price-box'>
                             <input type="hidden" id="price" value = "{{$product->price}}"/>
-                            <p class='price'>Rs. {{$product->price- ($product->price*$product->dis)/100}}</p>
+                            <p class='price'>Rs. {{floor($product->price- ($product->price*$product->discount)/100)}}</p>
                             <strike>Rs. {{$product->price}}</strike>
                         </div>
                         <form action='/addtocart' method='post' enctype="multipart/form-data">
